@@ -89,15 +89,15 @@ body, html {
     }
     
     .social-link {
-        padding: 1.5rem;
+        padding: 1.2rem;
     }
     
     .social-link i {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     
     .social-link span {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 }
 
@@ -107,7 +107,7 @@ body, html {
     }
     
     .overlay {
-        padding-bottom: 2.5rem;
+        padding-bottom: 2rem;
     }
     
     .social-links {
@@ -115,8 +115,16 @@ body, html {
     }
     
     .social-link {
-        padding: 1rem;
-        min-width: 120px;
+        padding: 0.8rem;
+        min-width: 100px;
+    }
+    
+    .social-link i {
+        font-size: 1.6rem;
+    }
+    
+    .social-link span {
+        font-size: 0.7rem;
     }
 }
 
