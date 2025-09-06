@@ -10,6 +10,14 @@ body, html {
     overflow: hidden;
 }
 
+/* Safari mobile viewport fix */
+@supports (-webkit-touch-callout: none) {
+    .background-container {
+        height: 100vh;
+        height: -webkit-fill-available;
+    }
+}
+
 .background-container {
     position: relative;
     width: 100%;
@@ -83,6 +91,10 @@ body, html {
 }
 
 @media (max-width: 768px) {
+    .overlay {
+        padding-bottom: 4rem;
+    }
+    
     .social-links {
         flex-direction: row;
         gap: 1.5rem;
@@ -107,7 +119,8 @@ body, html {
     }
     
     .overlay {
-        padding-bottom: 2rem;
+        padding-bottom: 5rem;
+        padding-bottom: calc(5rem + env(safe-area-inset-bottom));
     }
     
     .social-links {
